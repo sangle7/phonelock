@@ -1,0 +1,27 @@
+{
+  "name": "phonelock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "phonelock.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "deploy": "set NODE_ENV=production && webpack -p --config webpack.production.config.js"
+  },
+  "author": "sangle",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-preset-es2015": "^6.22.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "babel-loader": "^6.4.0",
+    "css-loader": "^0.27.3",
+    "style-loader": "^0.16.0"
+  }
+}
